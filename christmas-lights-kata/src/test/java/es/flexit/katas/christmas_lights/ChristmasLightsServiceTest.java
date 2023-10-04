@@ -51,7 +51,7 @@ class ChristmasLightsServiceTest {
             int result = lightsGrid.countLightsOn();
 
             // then
-            assertThat(result).isEqualTo(1000000);
+            assertThat(result).isEqualTo(1000004);
         }
     }
 
@@ -65,7 +65,7 @@ class ChristmasLightsServiceTest {
             int result = lightsGrid.countLightsOn();
 
             // then
-            assertThat(result).isEqualTo(1000);
+            assertThat(result).isEqualTo(2000);
         }
     }
 
@@ -113,7 +113,7 @@ class ChristmasLightsServiceTest {
             tested.toggleLightsInRange(831, 394, 904, 860);
 
             // then
-            assertThat(lightsGrid.countLightsOn()).isEqualTo(230022);
+            assertThat(lightsGrid.countLightsOn()).isEqualTo(539560);
         }
     }
 }
