@@ -24,7 +24,7 @@ class ToggleLightsInRangeServiceTest {
     }
 
     @Test
-    void should_toggle_lights_in_range() {
+    void should_increase_brightness_in_range_by_two() {
         // given
         var lightsGrid = new LightsGrid();
 

@@ -24,7 +24,7 @@ class TurnLightsOnInRangeServiceTest {
     }
 
     @Test
-    void should_turn_on_all_lights_in_range_given_some_lights_are_turned_off() {
+    void should_increase_brightness_in_range_by_one_given_some_lights_are_turned_off() {
         // given
         var lightsGrid = new LightsGrid();
 
@@ -36,7 +36,7 @@ class TurnLightsOnInRangeServiceTest {
     }
 
     @Test
-    void should_keep_lights_turned_on_if_they_are_turned_on() {
+    void should_increase_brightness_in_range_by_one_if_they_are_turned_on() {
         // given
         var lightsGrid = new LightsGrid();
         tested.turnLightsOn(lightsGrid, 0, 0, 999, 999);
